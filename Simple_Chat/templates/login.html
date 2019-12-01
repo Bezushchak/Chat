@@ -1,0 +1,20 @@
+<! DOCTYPE html>
+<html land="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=10">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Login</h1>
+  <form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" />
+  </form>
+  <form action="http://127.0.0.1:8000/accounts/register">
+    <input type="submit" value="Click here to register!" />
+  </form>
+</body>
+</html>
